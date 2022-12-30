@@ -1,3 +1,5 @@
+import Script from 'next/script'
+
 import {
   NEXT_PUBLIC_URL,
   NEXT_PUBLIC_SITE_TITLE,
@@ -15,7 +17,9 @@ const DocumentHead = ({ title = '', description = '', path = '', urlOgImage = ''
       <meta name="robots" content="max-image-preview:large" />
       <meta charSet="utf-8" />
       <title>{title ? `${title} - ${NEXT_PUBLIC_SITE_TITLE}` : NEXT_PUBLIC_SITE_TITLE}</title>
-      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+      <Script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"
+      />
       {NEXT_PUBLIC_URL ? (
         <link
           rel="canonical"
