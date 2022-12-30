@@ -15,6 +15,7 @@ const DocumentHead = ({ title = '', description = '', path = '', urlOgImage = ''
       <meta name="robots" content="max-image-preview:large" />
       <meta charSet="utf-8" />
       <title>{title ? `${title} - ${NEXT_PUBLIC_SITE_TITLE}` : NEXT_PUBLIC_SITE_TITLE}</title>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
       {NEXT_PUBLIC_URL ? (
         <link
           rel="canonical"
@@ -47,11 +48,11 @@ const DocumentHead = ({ title = '', description = '', path = '', urlOgImage = ''
       />
       <meta property="og:site_name" content={NEXT_PUBLIC_SITE_TITLE} />
       <meta property="og:type" content={
-          isRootPath
+        isRootPath
           ? 'website'
           : isSlugPath
             ? 'article'
-        : 'blog'
+            : 'blog'
       } />
       {urlOgImage ? (
         <meta property="og:image" content={urlOgImage} />
