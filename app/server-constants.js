@@ -7,8 +7,8 @@ const NOTION_API_SECRET = process.env.NOTION_API_SECRET
 const DATABASE_ID = process.env.DATABASE_ID
 const NEXT_PUBLIC_URL = process.env.NEXT_PUBLIC_URL
 const NEXT_PUBLIC_GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID
-const NEXT_PUBLIC_SITE_TITLE = 'easy-notion-blog'
-const NEXT_PUBLIC_SITE_DESCRIPTION = 'Easy to start your blog. You can write on your Notion.'
+const NEXT_PUBLIC_SITE_TITLE = 'ひびろぐ'
+const NEXT_PUBLIC_SITE_DESCRIPTION = '日々のWeb技術学習記録を残しています。…時々、デザイン、語学学習、電子工作!?'
 const BLOG_INDEX_CACHE = path.resolve('.blog_index_data')
 const NUMBER_OF_POSTS_PER_PAGE = 10
 
