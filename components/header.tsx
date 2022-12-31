@@ -40,17 +40,17 @@ const Header = () => {
           <div className="w-full flex-grow lg:flex  lg:content-center lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 z-20" id="nav-content">
           </div>
         </div>
-      </nav>
 
-      <ul className="w-full container items-center justify-between text-right">
-        {navItems.map(({ label, path }) => (
-          <li key={label}>
-            <Link href={path} className={pathname === path ? 'active, text-blue-600' : null}>
-              {label}
-            </Link>
-          </li>
-        ))}
-      </ul>
+        <ul className="w-full container items-center justify-between text-right">
+          {navItems.map(({ label, path }) => (
+            <li key={label}>
+              <Link href={path} className={pathname === path ? 'active, text-blue-600' : null}>
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   )
 }
