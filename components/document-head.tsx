@@ -47,11 +47,11 @@ const DocumentHead = ({ title = '', description = '', path = '', urlOgImage = ''
       />
       <meta property="og:site_name" content={NEXT_PUBLIC_SITE_TITLE} />
       <meta property="og:type" content={
-          isRootPath
+        isRootPath
           ? 'website'
           : isSlugPath
             ? 'article'
-        : 'blog'
+            : 'blog'
       } />
       {urlOgImage ? (
         <meta property="og:image" content={urlOgImage} />
