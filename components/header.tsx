@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation"
 import Link from 'next/link'
 import { NEXT_PUBLIC_SITE_TITLE } from '../app/server-constants'
 import styles from '../styles/header.module.css'
+import Script from 'next/script'
 
 interface NavItem {
   label: string
@@ -51,9 +52,26 @@ const Header = () => {
           ))}
         </ul>
       </nav>
+      <button onClick={toggleDarkMode}>テーマ切り替え</button>
     </header>
   )
 }
 
+function toggleDarkMode() {
+  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+
+  // Whenever the user explicitly chooses light mode
+  localStorage.theme = 'light'
+
+  // Whenever the user explicitly chooses dark mode
+  localStorage.theme = 'dark'
+
+  // Whenever the user explicitly chooses to respect the OS preference
+  localStorage.removeItem('theme')
+}
 export default Header
 

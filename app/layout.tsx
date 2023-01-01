@@ -10,7 +10,7 @@ const RootLayout = ({
   children: React.ReactNode,
 }) => (
   <html lang="ja" prefix="og: https://ogp.me/ns#" className='dark'>
-    <body className='bg-white dark:bg-black'>
+    <body className='bg-white dark:bg-gray-800'>
       <div className={styles.container}>
         <Header />
         <div className={styles.content}>
