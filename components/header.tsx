@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation"
 import Link from 'next/link'
 import { NEXT_PUBLIC_SITE_TITLE } from '../app/server-constants'
 import styles from '../styles/header.module.css'
-import Script from 'next/script'
 
 interface NavItem {
   label: string
