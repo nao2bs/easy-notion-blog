@@ -24,7 +24,9 @@ const Header = () => {
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-4">
           <div className="pl-4 flex items-center">
             <div className="text-black text-base no-underline hover:no-underline font-extrabold text-xl">
-              <h2>{NEXT_PUBLIC_SITE_TITLE}</h2>
+              <Link href="/">
+                <h2>{NEXT_PUBLIC_SITE_TITLE}</h2>
+              </Link>
             </div>
           </div>
           <div className="block lg:hidden pr-4">
@@ -38,24 +40,20 @@ const Header = () => {
           <div className="w-full flex-grow lg:flex  lg:content-center lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 z-20" id="nav-content">
           </div>
         </div>
-      </nav>
-      <h1>
-        <Link href="/">
-          {NEXT_PUBLIC_SITE_TITLE}
-        </Link>
-      </h1>
 
-      <ul className="w-full container items-center justify-between text-right">
-        {navItems.map(({ label, path }) => (
-          <li key={label}>
-            <Link href={path} className={pathname === path ? 'active, text-blue-600' : null}>
-              {label}
-            </Link>
-          </li>
-        ))}
-      </ul>
+        <ul className="w-full container items-center justify-between text-right">
+          {navItems.map(({ label, path }) => (
+            <li key={label}>
+              <Link href={path} className={pathname === path ? 'active, text-blue-600' : null}>
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   )
 }
 
 export default Header
+
