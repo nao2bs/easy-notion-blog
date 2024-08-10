@@ -34,3 +34,6 @@ yarn-error.log*
 tmp/
 public/notion_images/*
 !public/notion_images/.gitkeep
+dev-docs.json
+dev-docs/general.md
+dev-docs/reference.md
