@@ -19,6 +19,7 @@ const RootLayout = ({
   children: React.ReactNode,
 }) => (
   <html lang="ja" prefix="og: https://ogp.me/ns#">
+    <meta name="google-site-verification" content="KqH_rqHwgpBRCo-uApyrZAN8wAY0V8vo02DJ3tM0fss" />
     <body>
       <div className={styles.container}>
         <Header />
