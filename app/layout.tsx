@@ -20,6 +20,7 @@ const RootLayout = ({
 }) => (
   <html lang="ja" prefix="og: https://ogp.me/ns#">
     <body>
+      <meta name="google-site-verification" content="KqH_rqHwgpBRCo-uApyrZAN8wAY0V8vo02DJ3tM0fss" />
       <div className={styles.container}>
         <Header />
         <div className={styles.content}>
