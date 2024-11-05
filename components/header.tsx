@@ -20,6 +20,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
+      <meta name="google-site-verification" content="KqH_rqHwgpBRCo-uApyrZAN8wAY0V8vo02DJ3tM0fss" />
       <h1>
         <Link href="/">
           {NEXT_PUBLIC_SITE_TITLE}
